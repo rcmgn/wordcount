@@ -1,5 +1,9 @@
 package main
 
+/*
+**	release 0.1
+ */
+
 import (
 	"flag"
 	"fmt"
