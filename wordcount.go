@@ -17,6 +17,9 @@ func readInput() (res int) {
 	flag.Parse()
 	// fmt.Println(flag.Args())
 	str := strings.Join(flag.Args(), " ")
+	if str == "" {
+		return 0
+	}
 	// fmt.Println(str)
 	res = len(strings.Split(str, " "))
 	return res
