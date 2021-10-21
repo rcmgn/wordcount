@@ -11,16 +11,13 @@ func main() {
 	fmt.Println(cnt)
 }
 
-// readInput reads pattern and source string
-// from command line arguments and returns them.
 func readInput() (res int) {
 	flag.Parse()
-	// fmt.Println(flag.Args())
 	str := strings.Join(flag.Args(), " ")
 	if str == "" {
 		return 0
 	}
-	// fmt.Println(str)
+
 	res = len(strings.Split(str, " "))
 	return res
 }
